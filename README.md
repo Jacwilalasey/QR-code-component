@@ -12,8 +12,6 @@
 
 ### The challenge
 
-Users should be able to:
-
 - Create the basic HTML framework for a QR code card component 
 - Use CSS to style the page to match the design spec
 
@@ -26,6 +24,25 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to make nested loops (for within while), using this method to create a continuous loop of prompts that request the user to access one of four functions to add, list, delete a new to-do, or quit the app. I also used this practice to learn more about parseInt, to ensure whatever the user input within the delete index section, it would try to convert to an interger to allow the app to recognise the input:
+Used this exercise from FEM to practice my semantic HTML markup and to get a better grasp of CSS. One issue I came across was related to the positioning of the QR code card, I was struggling to get the card to move to the center of the box, spending a lot of time playing with the body selector in CSS. I finally had an 'it clicked' moment when I set the margin in my .container-sub element to auto and it all came together! 
 
+HTML in mention
+<body>
+  <div class="container-main flex">
+    <div class="container-sub">
+      <img src="./images/image-qr-code.png" style="width:250px; height:250px;" alt="">
+      <p><b>Improve your front-end skills by building projects</b></p>
+      <p class="subtext">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>  
+    </div>
+  </div>
+</body>
 
+CSS in mention
+.container-sub {
+    margin: auto;
+    border-radius: .6rem;
+    justify-items: center;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 50%;
+    box-shadow: 5px 5px 10px 5px hsl(220, 15%, 55%);
+}
