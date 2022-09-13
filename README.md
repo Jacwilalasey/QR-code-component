@@ -27,7 +27,8 @@
 Used this exercise from FEM to practice my semantic HTML markup and to get a better grasp of CSS. One issue I came across was related to the positioning of the QR code card, I was struggling to get the card to move to the center of the box, spending a lot of time playing with the body selector in CSS. I finally had an 'it clicked' moment when I set the margin in my .container-sub element to auto and it all came together! 
 
 HTML in mention
-<!--<body>
+```html
+<body>
   <div class="container-main flex">
     <div class="container-sub">
       <img src="./images/image-qr-code.png" style="width:250px; height:250px;" alt="">
@@ -36,8 +37,10 @@ HTML in mention
     </div>
   </div>
 </body>-->
+```
 
 CSS in mention
+```css
 <!--.container-sub {
     margin: auto;
     border-radius: .6rem;
@@ -46,3 +49,4 @@ CSS in mention
     max-width: 50%;
     box-shadow: 5px 5px 10px 5px hsl(220, 15%, 55%);
 } -->
+```
