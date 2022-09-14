@@ -12,7 +12,7 @@
 
 ### The challenge
 
-- Create the basic HTML framework for a QR code card component 
+- Create the basic HTML framework for a 3 column product card component 
 - Use CSS to style the page to match the design spec
 
 ## My process
