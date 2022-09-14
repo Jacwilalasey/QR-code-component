@@ -1,10 +1,10 @@
 
 body {
     background-color: hsl(212, 45%, 89%);
-    padding-inline: 2em;
-    max-width: 1440px;
-    min-width: 375px;
-    margin: 20vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20%;
 }
 
